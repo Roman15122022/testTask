@@ -1,10 +1,21 @@
 {
-  "name": "${PROJECT_NAME}",
+  "name": "testTask",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Herdsman prototype built with TypeScript, Vite, and PixiJS.",
+  "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "test": "vitest run"
   },
-  "private": true
+  "private": true,
+  "dependencies": {
+    "pixi.js": "^7.4.3"
+  },
+  "devDependencies": {
+    "typescript": "^6.0.3",
+    "vite": "^8.0.9",
+    "vitest": "^4.1.5"
+  }
 }
