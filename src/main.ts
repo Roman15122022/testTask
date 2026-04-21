@@ -1,5 +1,5 @@
-import { GameApp } from './game/GameApp';
-import './styles.css';
+import { GameApp } from '@/game/GameApp';
+import '@/styles.css';
 
 const mountNode = document.querySelector<HTMLDivElement>('#app');
 

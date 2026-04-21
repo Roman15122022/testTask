@@ -1,7 +1,7 @@
 import { Application } from 'pixi.js';
 
-import { APP_HEIGHT, APP_WIDTH } from './config';
-import { GameScene } from './GameScene';
+import { APP_HEIGHT, APP_WIDTH } from '@/game/config';
+import { GameScene } from '@/game/GameScene';
 
 export class GameApp {
   private readonly app = new Application({

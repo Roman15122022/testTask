@@ -1,8 +1,8 @@
 import { Graphics } from 'pixi.js';
 
-import { HERO_RADIUS, HERO_SPEED } from '../config';
-import type { Vector2 } from '../types';
-import { clamp, moveTowards } from '../logic/vector';
+import { HERO_RADIUS, HERO_SPEED } from '@/game/config';
+import { clamp, moveTowards } from '@/game/logic/vector';
+import type { Vector2 } from '@/game/types';
 
 export class Hero {
   readonly radius = HERO_RADIUS;

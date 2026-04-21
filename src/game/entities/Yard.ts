@@ -1,6 +1,6 @@
 import { Graphics } from 'pixi.js';
 
-import type { RectangleBounds } from '../types';
+import type { RectangleBounds } from '@/game/types';
 
 export class Yard {
   readonly bounds: RectangleBounds;

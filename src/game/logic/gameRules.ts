@@ -1,5 +1,5 @@
-import type { RectangleBounds, SpawnObstacle, Vector2 } from '../types';
-import { distance } from './vector';
+import type { RectangleBounds, SpawnObstacle, Vector2 } from '@/game/types';
+import { distance } from '@/game/logic/vector';
 
 export const canAddAnimalToHerd = (herdSize: number, herdCap: number): boolean =>
   herdSize < herdCap;

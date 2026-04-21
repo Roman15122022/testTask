@@ -1,13 +1,13 @@
 import { describe, expect, it } from 'vitest';
 
-import { YARD_BOUNDS } from '../src/game/config';
+import { YARD_BOUNDS } from '@/game/config';
 import {
   canAddAnimalToHerd,
   canAnimalJoinHerd,
   hasReachedYard,
   isValidSpawnPosition,
-} from '../src/game/logic/gameRules';
-import { generateSpawnPosition } from '../src/game/logic/spawn';
+} from '@/game/logic/gameRules';
+import { generateSpawnPosition } from '@/game/logic/spawn';
 
 describe('gameRules', () => {
   it('enforces the herd cap', () => {

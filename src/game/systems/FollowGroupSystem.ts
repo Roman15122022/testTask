@@ -1,7 +1,7 @@
-import { FOLLOW_SPACING, FOLLOW_SPEED } from '../config';
-import { Hero } from '../entities/Hero';
-import { Animal } from '../entities/Animal';
-import { distance } from '../logic/vector';
+import { FOLLOW_SPACING, FOLLOW_SPEED } from '@/game/config';
+import { Animal } from '@/game/entities/Animal';
+import { Hero } from '@/game/entities/Hero';
+import { distance } from '@/game/logic/vector';
 
 export class FollowGroupSystem {
   update(hero: Hero, animals: Animal[], deltaSeconds: number): void {

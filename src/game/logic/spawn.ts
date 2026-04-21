@@ -1,5 +1,5 @@
-import type { RectangleBounds, SpawnObstacle, Vector2 } from '../types';
-import { isValidSpawnPosition } from './gameRules';
+import { isValidSpawnPosition } from '@/game/logic/gameRules';
+import type { RectangleBounds, SpawnObstacle, Vector2 } from '@/game/types';
 
 interface SpawnPositionOptions {
   fieldWidth: number;

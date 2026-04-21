@@ -1,7 +1,7 @@
 import { Graphics } from 'pixi.js';
 
-import { ANIMAL_RADIUS } from '../config';
-import type { AnimalState, Vector2 } from '../types';
+import { ANIMAL_RADIUS } from '@/game/config';
+import type { AnimalState, Vector2 } from '@/game/types';
 
 export class Animal {
   readonly id: number;

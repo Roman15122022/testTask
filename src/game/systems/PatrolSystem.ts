@@ -1,9 +1,9 @@
-import { FIELD_BOUNDS, MIN_ENTITY_GAP, PATROL_INTERVAL_SECONDS, PATROL_SPEED } from '../config';
-import { Animal } from '../entities/Animal';
-import { generateSpawnPosition } from '../logic/spawn';
-import { randomFloat } from '../logic/random';
-import { distance, moveTowards } from '../logic/vector';
-import type { RectangleBounds } from '../types';
+import { FIELD_BOUNDS, MIN_ENTITY_GAP, PATROL_INTERVAL_SECONDS, PATROL_SPEED } from '@/game/config';
+import { Animal } from '@/game/entities/Animal';
+import { randomFloat } from '@/game/logic/random';
+import { generateSpawnPosition } from '@/game/logic/spawn';
+import { distance, moveTowards } from '@/game/logic/vector';
+import type { RectangleBounds } from '@/game/types';
 
 export class PatrolSystem {
   constructor(

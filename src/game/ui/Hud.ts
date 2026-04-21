@@ -1,8 +1,8 @@
 import { Container, Graphics, Text, TextStyle } from 'pixi.js';
 
-import { APP_WIDTH, HUD_HEIGHT } from '../config';
-import type { GameStatus } from '../types';
-import { ControlButton } from './ControlButton';
+import { APP_WIDTH, HUD_HEIGHT } from '@/game/config';
+import type { GameStatus } from '@/game/types';
+import { ControlButton } from '@/game/ui/ControlButton';
 
 export class Hud {
   readonly view = new Container();

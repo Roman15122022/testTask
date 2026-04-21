@@ -1,4 +1,4 @@
-import type { Vector2 } from '../types';
+import type { Vector2 } from '@/game/types';
 
 export const distance = (a: Vector2, b: Vector2): number => {
   const dx = a.x - b.x;

@@ -6,11 +6,11 @@ import {
   MIN_ENTITY_GAP,
   SPAWN_INTERVAL_SECONDS,
   SPAWN_PADDING,
-} from '../config';
-import { Animal } from '../entities/Animal';
-import { generateSpawnPosition } from '../logic/spawn';
-import { randomFloat } from '../logic/random';
-import type { RectangleBounds, Vector2 } from '../types';
+} from '@/game/config';
+import { Animal } from '@/game/entities/Animal';
+import { randomFloat } from '@/game/logic/random';
+import { generateSpawnPosition } from '@/game/logic/spawn';
+import type { RectangleBounds, Vector2 } from '@/game/types';
 
 interface SpawnSystemOptions {
   yardBounds: RectangleBounds;

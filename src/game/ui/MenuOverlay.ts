@@ -1,8 +1,8 @@
 import { Container, Graphics, Text, TextStyle } from 'pixi.js';
 
-import { FIELD_BOUNDS } from '../config';
-import type { GameStatus } from '../types';
-import { ControlButton } from './ControlButton';
+import { FIELD_BOUNDS } from '@/game/config';
+import type { GameStatus } from '@/game/types';
+import { ControlButton } from '@/game/ui/ControlButton';
 
 export class MenuOverlay {
   readonly view = new Container();

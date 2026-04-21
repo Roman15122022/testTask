@@ -10,19 +10,19 @@ import {
   MIN_ENTITY_GAP,
   SPAWN_PADDING,
   YARD_BOUNDS,
-} from './config';
-import { Animal } from './entities/Animal';
-import { Hero } from './entities/Hero';
-import { Yard } from './entities/Yard';
-import { canAddAnimalToHerd, canAnimalJoinHerd, hasReachedYard } from './logic/gameRules';
-import { randomInt } from './logic/random';
-import { generateSpawnPosition } from './logic/spawn';
-import type { GameStatus, Vector2 } from './types';
-import { PatrolSystem } from './systems/PatrolSystem';
-import { FollowGroupSystem } from './systems/FollowGroupSystem';
-import { SpawnSystem } from './systems/SpawnSystem';
-import { Hud } from './ui/Hud';
-import { MenuOverlay } from './ui/MenuOverlay';
+} from '@/game/config';
+import { Animal } from '@/game/entities/Animal';
+import { Hero } from '@/game/entities/Hero';
+import { Yard } from '@/game/entities/Yard';
+import { canAddAnimalToHerd, canAnimalJoinHerd, hasReachedYard } from '@/game/logic/gameRules';
+import { randomInt } from '@/game/logic/random';
+import { generateSpawnPosition } from '@/game/logic/spawn';
+import type { GameStatus, Vector2 } from '@/game/types';
+import { PatrolSystem } from '@/game/systems/PatrolSystem';
+import { FollowGroupSystem } from '@/game/systems/FollowGroupSystem';
+import { SpawnSystem } from '@/game/systems/SpawnSystem';
+import { Hud } from '@/game/ui/Hud';
+import { MenuOverlay } from '@/game/ui/MenuOverlay';
 
 export class GameScene {
   readonly view = new Container();

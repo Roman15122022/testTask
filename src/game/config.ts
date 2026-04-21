@@ -1,4 +1,4 @@
-import type { RectangleBounds, WorldBounds } from './types';
+import type { RectangleBounds, WorldBounds } from '@/game/types';
 
 export const HUD_HEIGHT = 76;
 export const FIELD_BOUNDS: WorldBounds = {
