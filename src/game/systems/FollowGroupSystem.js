@@ -1,0 +1,19 @@
+import { FOLLOW_SPACING, FOLLOW_SPEED } from '../config';
+import { distance } from '../logic/vector';
+export class FollowGroupSystem {
+    update(hero, animals, deltaSeconds) {
+        let leaderPosition = hero.position;
+        for (const animal of animals) {
+            const gap = distance(animal.position, leaderPosition);
+            if (gap > FOLLOW_SPACING) {
+                const closableDistance = Math.min(FOLLOW_SPEED * deltaSeconds, gap - FOLLOW_SPACING);
+                const step = closableDistance / gap;
+                animal.setPosition({
+                    x: animal.position.x + (leaderPosition.x - animal.position.x) * step,
+                    y: animal.position.y + (leaderPosition.y - animal.position.y) * step,
+                });
+            }
+            leaderPosition = animal.position;
+        }
+    }
+}
